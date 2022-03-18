@@ -10,16 +10,16 @@ export default function App() {
         <nav>
           <ul>
             <li>
-              <Link to="/">HomePage</Link>
+              <Link to="/React-Github-Issues/">HomePage</Link>
             </li>
           </ul>
         </nav>
         <div className="container">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/React-Github-Issues/">
               <Issues />
             </Route>
-            <Route path="/issues/:id">
+            <Route path="/React-Github-Issues/issues/:id">
               <Details />
             </Route>
           </Switch>

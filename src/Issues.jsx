@@ -1,5 +1,6 @@
 import './reset.css';
 import './App.css';
+import { Link } from 'react-router-dom';
 
 function App() {
   const fakeArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
@@ -8,7 +9,7 @@ function App() {
     <div>
       <div className="issues-container">
         <div className="issues-heading">
-          <a href="#">facebook / create-react-app</a>
+          {/* <a href="#">facebook / create-react-app</a> */}
           <div className="open-closed-buttons">
             <button>
               <svg
@@ -65,15 +66,18 @@ function App() {
                   ></path>
                 </svg>
                 <div className="issues-title">
-                  <a href="#">
+                  <Link to={`/React-Github-Issues/issues/1`}>
                     Issue with running single test with jest command
-                  </a>
+                  </Link>
                   <div className="issues-title-details">
                     #11185 opened 10 hours ago by B3nnyL
                   </div>
                 </div>
               </div>
-              <a href="#" className="comments-count-container">
+              <Link
+                to={`/React-Github-Issues/issues/1`}
+                className="comments-count-container"
+              >
                 <svg
                   className="octicon octicon-comment v-align-middle"
                   viewBox="0 0 16 16"
@@ -88,7 +92,7 @@ function App() {
                   ></path>
                 </svg>
                 <div class="comments-count">21</div>
-              </a>
+              </Link>
             </div>
           ))}
         </div>
