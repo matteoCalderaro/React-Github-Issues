@@ -45,7 +45,7 @@ export default function Details() {
           </a>
           <div className="comment">
             <div className="comment-heading">
-              <a href={issue.user.html_url}>mdaj06</a> commented{' '}
+              <a href={issue.user.html_url}>{issue.user.login}</a> commented{' '}
               {formatDistance(new Date(issue.created_at), new Date(), {
                 addSuffix: true,
               })}
